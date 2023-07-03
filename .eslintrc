@@ -1,0 +1,87 @@
+{
+  "root": true,
+  "extends": ["@react-native-community", "react-app", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    // eslint rules
+    "curly": "error",
+    "eqeqeq": "error",
+    "no-alert": "error",
+    "no-async-promise-executor": "error",
+    "no-console": "error",
+    "no-duplicate-imports": "error",
+    "no-empty": "error",
+    "no-empty-function": "error",
+    "no-unused-vars": "error",
+    "no-useless-escape": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+
+    // eslint-plugin-eslint-comments rules (e.g. eslint-comments/...)
+    // empty
+
+    // eslint-plugin-react rules (e.g. react/...)
+    "react/jsx-key": "error",
+    "react/react-in-jsx-scope": "error",
+    "react/self-closing-comp": "error",
+
+    // eslint-plugin-react-hooks rules (e.g. react-hooks/...)
+    // empty
+
+    // eslint-plugin-react-native rules (e.g. react-native/...)
+    // empty
+
+    // eslint-plugin-jest rules (e.g. jest/...)
+    // empty
+
+    // eslint-plugin-import rules (e.g. import/...)
+    "import/export": "error",
+    "import/no-anonymous-default-export": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-named-as-default-member": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "type",
+          "object"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "{react, react-native}",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+
+    // eslint-plugin-flowtype rules (e.g. flowtype/...)
+    // empty
+
+    // eslint-plugin-jsx-a11y rules (e.g. jsx-a11y/...)
+    // empty
+
+    // eslint-plugin-prettier rules (e.g. prettier/prettier)
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ]
+  }
+}
