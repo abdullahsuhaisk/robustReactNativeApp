@@ -1,0 +1,75 @@
+# Building a Robust React Native App
+
+This repository contains the source code for a React Native app focused on helping users develop reading habits. The goal of this project is to create a robust authentication system for the app. The authentication features have already been implemented, and this project will mainly focus on testing strategies and best practices.
+
+## Project Overview
+
+The app consists of five screens:
+
+- Onboarding
+- Login
+- SignIn
+- ForgetPassword
+- HomeScreen
+
+The following libraries have been utilized in this project:
+
+- `react-native-navigation`
+- `react-native-svg`
+- `redux-saga`
+
+The app is written in TypeScript, and throughout the project, you will find examples and usages of redux-saga, TypeScript, and react-navigation.
+
+## Testing Approach
+
+This project emphasizes the importance of testing in React Native app development. The testing process involves three main types of tests:
+
+1. **Unit Tests**: These tests focus on validating individual components and functions (units) of the code. Unit tests help ensure that components adhere to standards and work as expected.
+
+2. **Integration Tests**: Integration tests verify the interaction between different components of the app. For example, testing components with asynchronous operations or components that rely on Redux for state management falls under integration testing.
+
+3. **End-to-End (E2E) Tests**: E2E tests simulate real user interactions and ensure the entire system works as expected. These tests validate the functionality of the app from a user's perspective.
+
+The project utilizes popular testing libraries and tools, including:
+
+- Jest as the test runner
+- `@testing-library/jest-native` for custom element matchers
+- `@testing-library/react-native` for rendering components and accessing rendered elements
+
+## Getting Started
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:abdullahsuhaisk/robustReactNativeApp.git
+   cd robustReactNativeApp
+   npm install
+   npx pod-install
+   npm run ios
+   ```
+2. Running Tests
+To run the tests, use the following command:
+
+```bash
+npm run test
+```
+The tests utilize the Jest test runner and include unit tests, integration tests, and E2E tests.
+
+## Contributing
+Contributions to this project are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+Please ensure that your contributions adhere to the project's code style and testing guidelines.
+
+License
+This project is licensed under the MIT License.
+
+css
+Copy code
+
+Feel free to adjust the content as per your requirements and project details.
+
+
+
+
+
