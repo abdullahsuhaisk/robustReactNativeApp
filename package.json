@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "npm run test -- --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/**/*.{types, stories, constants, test, spec}.{ts,tsx}'"
   },
   "dependencies": {
     "@react-native-community/checkbox": "^0.5.15",
