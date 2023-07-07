@@ -34,12 +34,12 @@ const appIntroScreensArray: Array<appIntroScreenType> = [
   },
 ];
 
-const AppIntro: React.FC<{}> = () => {
+const Onboarding: React.FC<{}> = () => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1}} testID='Onboarding'>
       <AppIntroSlider appIntroScreensArray={appIntroScreensArray} />
     </View>
   );
 };
 
-export default AppIntro;
+export default Onboarding;
