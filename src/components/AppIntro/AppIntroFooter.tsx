@@ -48,7 +48,7 @@ const AppIntroFooter: FC<AppIntroFooterProps> = ({
     handleScrollTo(destination);
   }
   return (
-    <View style={[styles.container, { width }]}>
+    <View style={[styles.container, { width }]} testID={"appIntroFooter"}>
       {pageIndex >= appIntroScreensArray.length - 1 ? (
         <View style={{ width: width - 20 }}>
           <Button

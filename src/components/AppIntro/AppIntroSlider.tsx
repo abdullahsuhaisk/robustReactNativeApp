@@ -52,7 +52,7 @@ const AppIntroSlider: FC<AppIntroSliderProps> = ({ appIntroScreensArray }) => {
   };
 
   return (
-    <SafeAreaView style={{ backgroundColor: COLORS.appIntroBgColor, flex: 1 }}>
+    <SafeAreaView style={{ backgroundColor: COLORS.appIntroBgColor, flex: 1}} testID='appIntroSlider'>
       <ScrollView
         horizontal={true}
         scrollEventThrottle={16}
