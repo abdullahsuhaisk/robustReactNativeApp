@@ -3,5 +3,8 @@
     "setupFilesAfterEnv": ["<rootDir>/src/tests/setup.ts"],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation)"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.svg": "<rootDir>/src/tests/setup.ts"
+    }
   }

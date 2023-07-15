@@ -3,3 +3,11 @@ import '@testing-library/jest-native/extend-expect';
 jest.mock('@react-navigation/native', () => ({
     useNavigation: jest.fn(),
   }));
+
+  //mock svgUri
+jest.mock('react-native-svg', () => ({
+  SvgUri: 'SvgUri',
+}));
+
+module.exports = 'SvgMock';
+module.exports.ReactComponent = 'SvgMock';

@@ -31,7 +31,6 @@ const TextInput: React.FC<TextInputProps> = ({
   function onChangeText(text: React.SetStateAction<string>) {
     setText(text);
   }
-  // console.log(icon);
 
   return (
     <View
@@ -39,6 +38,7 @@ const TextInput: React.FC<TextInputProps> = ({
         styles.container,
         color ? { backgroundColor: color } : { backgroundColor: COLORS.white },
       ]}
+      testID={testID}
     >
       {icon ? (
         <View style={styles.iconContainer}>
@@ -50,7 +50,6 @@ const TextInput: React.FC<TextInputProps> = ({
         onChangeText={(text: string) => onChangeText(text)}
         value={text}
         placeholder={placeHolder}
-        testID={testID}
       />
     </View>
   );

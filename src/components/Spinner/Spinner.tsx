@@ -14,7 +14,7 @@ interface SpinnerProps {
  */
 
 const Spinner: FC<SpinnerProps> = ({size, color}) => (
-  <View style={[styles.container, styles.horizontal]}>
+  <View style={[styles.container, styles.horizontal]} testID='spinner'>
     <ActivityIndicator
       size={size ? size : 'small'}
       color={color ? color : COLORS.primary}
